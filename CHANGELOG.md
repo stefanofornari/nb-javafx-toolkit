@@ -1,0 +1,24 @@
+#20260427 - initial revision
+
+- First version bundles the following libraries:
+  - **JavaFX** v21.0.10
+    - org.javafx:javafx-base
+    - org.javafx:javafx-controls
+    - org.javafx:javafx-fxml
+    - org.javafx:javafx-graphics
+    - org.javafx:javafx-media
+    - org.javafx:javafx-swing
+  - **FormsFX** v26.0.2
+    - ste.github.stefanofornari:formsfx
+  - **PreferencesFX** v26.0.2
+    - ste.github.stefanofornari:preferencesfx
+  - **ControlsFX** v11.2.3
+    - org.controlsfx:controlsfx
+  - **AnimateFX** v1.2.4
+    - io.github.typhon0.AnimateFX
+  - **Ikonli Icons Pack** v12.4.0
+    - org.kordamp.ikonli:ikonly-core
+    - org.kordamp.ikonli:ikonli-material-pack
+    - org.kordamp.ikonli:ikonli-javafx
+  - **AtlantaFX** v2.1.0
+    - io.github.mkpaz:atlantafx-base

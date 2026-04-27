@@ -1,0 +1,12 @@
+title: JavaFX Toolkit for NetBeans
+description: NetBeans wrapper module providing top quality FX libraries and components.
+theme: jekyll-theme-hacker
+show_downloads: true
+
+github:
+  is_project_page: true
+  repository_url: https://github.com/stefanofornari/nb-javafx-toolkit
+  zip_url: https://github.com/stefanofornari/nb-javafx-toolkit/archive/refs/heads/main.zip
+  tar_url: https://github.com/stefanofornari/nb-javafx-toolkit/archive/refs/heads/main.tar.gz
+
+google_analytics:

@@ -1,0 +1,15 @@
+target/
+*.nbm
+*.jar
+.netbeans/
+nbproject/private/
+build/
+dist/
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+.factorypath
+.externalToolBuilders/
+.DS_Store
