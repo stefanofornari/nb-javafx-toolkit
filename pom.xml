@@ -4,7 +4,7 @@
 
     <groupId>com.github.stefanofornari</groupId>
     <artifactId>nb-javafx-toolkit</artifactId>
-    <version>0.0.0</version>
+    <version>0.0.0-SNAPSHOT</version>
     <packaging>nbm</packaging>
 
     <name>JavaFX Toolkit for NetBeans</name>
@@ -28,7 +28,7 @@
         - io.github.typhon0.AnimateFX
         - **Ikonly Icons Pack** v12.4.0
         - org.kordamp.ikonli:ikonly-core
-        - org.kordamp.ikonli:ikonli-material-pack
+        - org.kordamp.ikonli:ikonli-material2-pack
         - org.kordamp.ikonli:ikonli-javafx
         - **AtlantaFX** v2.1.0
         - io.github.mkpaz:atlantafx-base
@@ -124,7 +124,7 @@
             <exclusions>
                 <exclusion>
                     <groupId>org.kordamp.ikonli</groupId>
-                    <artifactId>ikonli-material-pack</artifactId>
+                    <artifactId>ikonli-material2-pack</artifactId>
                 </exclusion>
                 <exclusion>
                     <groupId>org.kordamp.ikonli</groupId>
@@ -367,7 +367,7 @@
         </dependency>
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
-            <artifactId>ikonli-material-pack</artifactId>
+            <artifactId>ikonli-material2-pack</artifactId>
             <version>${ikonli.version}</version>
             <exclusions>
                 <exclusion>
@@ -501,6 +501,7 @@
                         </dependency>
                     </moduleDependencies>
                     <publicPackages>
+                        <publicPackage>ste.netbeans.javafx.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.model.structure.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.view.util.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.*</publicPackage>
@@ -509,6 +510,7 @@
                         <publicPackage>org.kordamp.ikonli.*</publicPackage>
                         <publicPackage>org.kordamp.ikonli.javafx.*</publicPackage>
                         <publicPackage>org.kordamp.ikonli.feather.*</publicPackage>
+                        <publicPackage>org.kordamp.ikonli.material2.*</publicPackage>
                         <publicPackage>atlantafx.base.theme.*</publicPackage>
                         <publicPackage>atlantafx.base.util.*</publicPackage>
                         <publicPackage>animatefx.animation.*</publicPackage>
