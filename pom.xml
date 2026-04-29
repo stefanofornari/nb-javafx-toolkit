@@ -4,7 +4,7 @@
 
     <groupId>com.github.stefanofornari</groupId>
     <artifactId>nb-javafx-toolkit</artifactId>
-    <version>0.0.0-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>nbm</packaging>
 
     <name>JavaFX Toolkit for NetBeans</name>
@@ -611,7 +611,7 @@
     <scm>
         <connection>scm:git:git@github.com:stefanofornari/nb-javafx-toolkit.git</connection>
         <url>https://github.com/stefanofornari/nb-javafx-toolkit/tree/main</url>
-        <tag>nb-javafx-toolkit-0.0.0</tag>
+        <tag>nb-javafx-toolkit-0.0.1</tag>
     </scm>
 
     <distributionManagement>
