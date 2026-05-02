@@ -1,4 +1,4 @@
-# <img src="logo.svg" width="64" height="64" alt="JavaFX Toolkit Logo" style="vertical-align: middle;"> JavaFX Toolkit for NetBeans
+# <img src="assets/logo.svg" width="64" height="64" alt="JavaFX Toolkit Logo" style="vertical-align: middle;"> JavaFX Toolkit for NetBeans
 
 NetBeans wrapper module that provides to NetBeans plug-ins top quality FX libraries and components.
 
@@ -6,13 +6,13 @@ Built to empower NetBeans developers with modern UI capabilities using the lates
 
 ## Included Libraries
 
-- **JavaFX** v21.0.10: The core platform for modern Java UI development.
-- **FormsFX** v26.0.2: Easily create form-based UIs.
-- **PreferencesFX** v26.0.2: Manage application preferences with ease.
-- **ControlsFX** v11.2.3: High-quality UI controls and tools.
-- **AnimateFX** v1.2.4: Ready-to-use animations for JavaFX.
-- **Ikonli Icons Pack** v12.4.0: A wide variety of icon packs for JavaFX.
-- **AtlantaFX** v2.1.0: Modern CSS themes for JavaFX.
+- **[JavaFX](https://openjfx.io/) v21.0.10**: The core platform for modern Java UI development.
+- **[FormsFX](https://github.com/dlsc-software-consulting-gmbh/FormsFX) v26.0.2**: Easily create form-based UIs.
+- **[PreferencesFX](https://github.com/dlsc-software-consulting-gmbh/PreferencesFX) v26.0.2**: Manage application preferences with ease.
+- **[ControlsFX](https://github.com/controlsfx/controlsfx) v11.2.3**: High-quality UI controls and tools.
+- **[AnimateFX](https://github.com/Typhon0/AnimateFX) v1.2.4**: Ready-to-use animations for JavaFX.
+- **[Ikonli Icons Pack](https://github.com/kordamp/ikonli) v12.4.0**: A wide variety of icon packs for JavaFX.
+- **[AtlantaFX](https://github.com/mkpaz/atlantafx) v2.1.0**: Modern CSS themes for JavaFX.
 
 ## Installation
 
@@ -50,5 +50,5 @@ mvn clean package
 The resulting `.nbm` file will be in the `target` directory.
 
 ---
-**License**: Multiple (see [LICENSES](https://github.com/stefanofornari/nb-javafx-toolkit/tree/main/LICENSES) folder)  
+**License**: Multiple (see [LICENSES](https://github.com/stefanofornari/nb-javafx-toolkit/tree/main/LICENSES) folder)
 **Author**: Stefano Fornari
