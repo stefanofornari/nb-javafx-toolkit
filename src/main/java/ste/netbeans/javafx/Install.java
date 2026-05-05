@@ -28,7 +28,7 @@ import org.openide.modules.OnStart;
 @OnStart
 public class Install extends ModuleInstall implements Runnable {
 
-    private final Logger LOG = Logger.getLogger(getClass().getCanonicalName());
+    private final Logger LOG = Logger.getLogger(getClass().getName());
 
     @Override
     public void run() {
