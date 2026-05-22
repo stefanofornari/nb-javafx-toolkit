@@ -1,3 +1,6 @@
+#NEXT
+- Fixed #4 Improve category and description in plug-ins panel
+
 #20260427 - initial revision
 
 - First version bundles the following libraries:
