@@ -71,8 +71,8 @@
         <maven.compiler.target>21</maven.compiler.target>
         <netbeans.version>RELEASE140</netbeans.version>
         <javafx.version>21.0.10</javafx.version>
-        <preferencesfx.version>26.0.3</preferencesfx.version>
-        <formsfx.version>26.0.2</formsfx.version>
+        <preferencesfx.version>26.0.4-SNAPSHOT</preferencesfx.version>
+        <formsfx.version>26.0.2-SNAPSHOT</formsfx.version>
         <controlsfx.version>11.2.3</controlsfx.version>
         <animatefx.version>1.2.4</animatefx.version>
         <ikonli.version>12.4.0</ikonli.version>
@@ -484,6 +484,28 @@
             <version>RELEASE140</version>
             <type>jar</type>
         </dependency>
+
+        <!--
+            Test dependencies
+        -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>6.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>6.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.27.7</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -512,7 +534,9 @@
                     </moduleDependencies>
                     <publicPackages>
                         <publicPackage>ste.netbeans.javafx.*</publicPackage>
+                        <publicPackage>ste.netbeans.javafx.collections.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.model.structure.*</publicPackage>
+                        <publicPackage>com.dlsc.formsfx.view.renderer</publicPackage>
                         <publicPackage>com.dlsc.formsfx.view.util.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.model.*</publicPackage>

@@ -100,3 +100,18 @@
 .opaque-panel {
     -fx-background-color: -color-bg-default;
 }
+
+.height-s {
+    -fx-min-height: 80px !important;
+    -fx-pref-height: 80px !important;
+}
+
+.height-m {
+    -fx-min-height: 100px !important;
+    -fx-pref-height: 100px !important;
+}
+
+.height-l {
+    -fx-min-height: 125px !important;
+    -fx-pref-height: 125px !important;
+}
