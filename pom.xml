@@ -9,29 +9,63 @@
 
     <name>JavaFX Toolkit for NetBeans</name>
     <description>
-        NetBeans wrapper module that provides to NetBeans plug-ins top quality FX libraries and components.
-        In particular:
-        - **JavaFX** v21.0.10
-        - org.javafx:javafx-base
-        - org.javafx:javafx-controls
-        - org.javafx:javafx-fxml
-        - org.javafx:javafx-graphics
-        - org.javafx:javafx-media
-        - org.javafx:javafx-swing
-        - **FormsFX** v26.0.2
-        - ste.github.stefanofornari:formsfx
-        - **PreferencesFX** v26.0.2
-        - ste.github.stefanofornari:preferencesfx
-        - **ControlsFX** v26.0.3
-        - org.controlsfx:controlsfx
-        - **AnimateFX** v1.2.4
-        - io.github.typhon0.AnimateFX
-        - **Ikonly Icons Pack** v12.4.0
-        - org.kordamp.ikonli:ikonly-core
-        - org.kordamp.ikonli:ikonli-material2-pack
-        - org.kordamp.ikonli:ikonli-javafx
-        - **AtlantaFX** v2.1.0
-        - io.github.mkpaz:atlantafx-base
+        <![CDATA[
+        <p>
+            NetBeans wrapper module that provides to NetBeans plug-ins top quality FX libraries and components.
+        </p>
+        <p>In particular:</p>
+        <ul>
+            <li>
+                <b>JavaFX v21.0.10</b>
+                <ul>
+                    <li>org.javafx:javafx-base</li>
+                    <li>org.javafx:javafx-controls</li>
+                    <li>org.javafx:javafx-fxml</li>
+                    <li>org.javafx:javafx-graphics</li>
+                    <li>org.javafx:javafx-media</li>
+                    <li>org.javafx:javafx-swingv</li>
+                </ul>
+            </li>
+            <li>
+                <b>FormsFX v26.0.2</b>
+                <ul>
+                    <li>ste.github.stefanofornari:formsfx</li>
+                </ul>
+            </li>
+            <li>
+                <b>PreferencesFX v26.0.2</b>
+                <ul>
+                    <li>ste.github.stefanofornari:preferencesfx</li>
+                </ul>
+            </li>
+            <li>
+                <b>ControlsFX v26.0.3</b>
+                <ul>
+                    <li>org.controlsfx:controlsfx</li>
+                </ul>
+            </li>
+            <li>
+                <b>AnimateFX v1.2.4</b>
+                <ul>
+                    <li>io.github.typhon0.AnimateFX</li>
+                </ul>
+            </li>
+            <li>
+                <b>Ikonly Icons Pack v12.4.0</b>
+                <ul>
+                    <li>org.kordamp.ikonli:ikonly-core</li>
+                    <li>org.kordamp.ikonli:ikonli-material2-pack</li>
+                    <li>org.kordamp.ikonli:ikonli-javafx</li>
+                </ul>
+            </li>
+            <li>
+                <b>AtlantaFX v2.1.0</b>
+                <ul>
+                    <li>io.github.mkpaz:atlantafx-base</li>
+                </ul>
+            </li>
+        </ul>
+        ]]>
     </description>
     <url>https://github.com/stefanofornari/nb-javafx-toolkit</url>
 
