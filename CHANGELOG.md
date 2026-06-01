@@ -1,5 +1,11 @@
-#NEXT
+#20260601
+- Bumped versions:
+  - FormsFX v26.0.3
+  - PreferencesFX v26.0.4
 - Fixed #4 Improve category and description in plug-ins panel
+- Implemented MappedList
+- New Iconli icon pack:
+  bootstrapicons-pack
 
 #20260427 - initial revision
 

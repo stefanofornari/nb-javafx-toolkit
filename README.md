@@ -4,13 +4,13 @@ NetBeans wrapper module providing top-quality JavaFX libraries and components fo
 
 ## Bundled Libraries
 
-- **[JavaFX](https://openjfx.io/) v21.0.10** (Base, Controls, FXML, Graphics, Media, Swing)
-- **[FormsFX](https://github.com/stefanofornari/formsfx)(1) v26.0.2**
-- **[PreferencesFX](https://github.com/stefanofornari/preferencesfx)(1) v26.0.2**
-- **[ControlsFX](https://github.com/controlsfx/controlsfx) v11.2.3**
-- **[AnimateFX](https://github.com/Typhon0/AnimateFX) v1.2.4**
-- **[Ikonli Icons Pack](https://github.com/kordamp/ikonli) v12.4.0**
-- **[AtlantaFX](https://github.com/mkpaz/atlantafx) v2.1.0**
+- **[JavaFX](https://openjfx.io/) v21.0.10**: The core platform for modern Java UI development.
+- **[FormsFX](https://github.com/dlsc-software-consulting-gmbh/FormsFX) v26.0.2**: Easily create form-based UIs.
+- **[PreferencesFX](https://github.com/dlsc-software-consulting-gmbh/PreferencesFX) v26.0.2**: Manage application preferences with ease.
+- **[ControlsFX](https://github.com/controlsfx/controlsfx) v11.2.3**: High-quality UI controls and tools.
+- **[AnimateFX](https://github.com/Typhon0/AnimateFX) v1.2.4**: Ready-to-use animations for JavaFX.
+- **[Ikonli Icons Pack](https://github.com/kordamp/ikonli) v12.4.0**: A wide variety of icon packs for JavaFX.
+- **[AtlantaFX](https://github.com/mkpaz/atlantafx) v2.1.0**: Modern CSS themes for JavaFX.
 
 ## Quick Start
 
@@ -26,7 +26,7 @@ Add this to your NetBeans module's `pom.xml`:
 <dependency>
     <groupId>com.github.stefanofornari</groupId>
     <artifactId>nb-javafx-toolkit</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <type>nbm</type>
 </dependency>
 ```
