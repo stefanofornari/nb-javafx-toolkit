@@ -27,13 +27,13 @@
                 </ul>
             </li>
             <li>
-                <b>FormsFX v26.0.2</b>
+                <b>FormsFX v26.0.3</b>
                 <ul>
                     <li>ste.github.stefanofornari:formsfx</li>
                 </ul>
             </li>
             <li>
-                <b>PreferencesFX v26.0.2</b>
+                <b>PreferencesFX v26.0.4</b>
                 <ul>
                     <li>ste.github.stefanofornari:preferencesfx</li>
                 </ul>
@@ -51,10 +51,11 @@
                 </ul>
             </li>
             <li>
-                <b>Ikonly Icons Pack v12.4.0</b>
+                <b>Ikonli Icons Pack v12.4.0</b>
                 <ul>
                     <li>org.kordamp.ikonli:ikonly-core</li>
                     <li>org.kordamp.ikonli:ikonli-material2-pack</li>
+                    <li>org.kordamp.ikonli:ikonli-bootstrapicons-pack</li>
                     <li>org.kordamp.ikonli:ikonli-javafx</li>
                 </ul>
             </li>
@@ -105,8 +106,8 @@
         <maven.compiler.target>21</maven.compiler.target>
         <netbeans.version>RELEASE140</netbeans.version>
         <javafx.version>21.0.10</javafx.version>
-        <preferencesfx.version>26.0.3</preferencesfx.version>
-        <formsfx.version>26.0.2</formsfx.version>
+        <preferencesfx.version>26.0.4</preferencesfx.version>
+        <formsfx.version>26.0.3</formsfx.version>
         <controlsfx.version>11.2.3</controlsfx.version>
         <animatefx.version>1.2.4</animatefx.version>
         <ikonli.version>12.4.0</ikonli.version>
@@ -354,120 +355,27 @@
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
             <artifactId>ikonli-core</artifactId>
-            <version>12.4.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.kordamp.ikonli</groupId>
-            <artifactId>ikonli-feather-pack</artifactId>
             <version>${ikonli.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.controlsfx</groupId>
-                    <artifactId>controlsfx</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>com.github.stefanofornari</groupId>
-                    <artifactId>nb-javafx-toolkit</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.kordamp.ikonli</groupId>
-                    <artifactId>ikonli-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-controls</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-fxml</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-swing</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-base</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-graphics</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-media</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.kordamp.ikonli</groupId>
-            <artifactId>ikonli-material2-pack</artifactId>
-            <version>${ikonli.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.kordamp.ikonli</groupId>
-                    <artifactId>ikonli-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-controls</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-fxml</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-swing</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-base</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-graphics</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-media</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.kordamp.ikonli</groupId>
             <artifactId>ikonli-javafx</artifactId>
             <version>${ikonli.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.kordamp.ikonli</groupId>
-                    <artifactId>ikonli-core</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-controls</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-fxml</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-swing</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-base</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-graphics</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.openjfx</groupId>
-                    <artifactId>javafx-media</artifactId>
-                </exclusion>
-            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-bootstrapicons-pack</artifactId>
+            <version>${ikonli.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-feather-pack</artifactId>
+            <version>${ikonli.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kordamp.ikonli</groupId>
+            <artifactId>ikonli-materialdesign2-pack</artifactId>
+            <version>${ikonli.version}</version>
         </dependency>
 
         <!--
@@ -518,6 +426,28 @@
             <version>RELEASE140</version>
             <type>jar</type>
         </dependency>
+
+        <!--
+            Test dependencies
+        -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>6.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>6.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.27.7</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -546,7 +476,9 @@
                     </moduleDependencies>
                     <publicPackages>
                         <publicPackage>ste.netbeans.javafx.*</publicPackage>
+                        <publicPackage>ste.netbeans.javafx.collections.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.model.structure.*</publicPackage>
+                        <publicPackage>com.dlsc.formsfx.view.renderer</publicPackage>
                         <publicPackage>com.dlsc.formsfx.view.util.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.model.*</publicPackage>

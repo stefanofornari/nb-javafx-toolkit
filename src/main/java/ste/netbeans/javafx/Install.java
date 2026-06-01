@@ -16,10 +16,8 @@
  */
 package ste.netbeans.javafx;
 
-import atlantafx.base.theme.PrimerLight;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javafx.application.Application;
 import javafx.application.Platform;
 import org.openide.modules.ModuleInstall;
 import org.openide.modules.OnStart;
@@ -37,7 +35,7 @@ public class Install extends ModuleInstall implements Runnable {
         try {
             Platform.setImplicitExit(false);
             Platform.startup(() -> {
-                Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
+                //Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
             });
         } catch (Throwable t) {
             LOG.log(Level.SEVERE, "Error in NetBeans JavaFX Toolkit module restoration", t);

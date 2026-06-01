@@ -7,12 +7,18 @@ Built to empower NetBeans developers with modern UI capabilities using the lates
 ## Included Libraries
 
 - **[JavaFX](https://openjfx.io/) v21.0.10**: The core platform for modern Java UI development.
-- **[FormsFX](https://github.com/dlsc-software-consulting-gmbh/FormsFX) v26.0.2**: Easily create form-based UIs.
-- **[PreferencesFX](https://github.com/dlsc-software-consulting-gmbh/PreferencesFX) v26.0.2**: Manage application preferences with ease.
+- **[FormsFX](https://github.com/stefanofornari/formfx) v26.0.3**: Easily create form-based UIs.
+- **[PreferencesFX](https://github.com/stefanofornari/preferencesfx) v26.0.5**: Manage application preferences with ease.
 - **[ControlsFX](https://github.com/controlsfx/controlsfx) v11.2.3**: High-quality UI controls and tools.
 - **[AnimateFX](https://github.com/Typhon0/AnimateFX) v1.2.4**: Ready-to-use animations for JavaFX.
 - **[Ikonli Icons Pack](https://github.com/kordamp/ikonli) v12.4.0**: A wide variety of icon packs for JavaFX.
 - **[AtlantaFX](https://github.com/mkpaz/atlantafx) v2.1.0**: Modern CSS themes for JavaFX.
+
+## Toolkit Features
+JavaFX Toolkit for NetBeans provides also some general purpose utlity classes and
+functionality. This sections describes the available features.
+
+- **[MappedList](MappedList)**: A TransformationList that maps items from a source ObservableList using a mapper function.
 
 ## Installation
 
@@ -35,7 +41,9 @@ Built to empower NetBeans developers with modern UI capabilities using the lates
 
 ## Usage
 
-Once installed, your NetBeans plugins can depend on `JavaFX Toolkit for NetBeans` to access the included libraries. Make sure to add the module as a dependency in your project's `pom.xml` or NetBeans module configuration.
+Once installed, your NetBeans plugins can depend on `JavaFX Toolkit for NetBeans`
+to access the included libraries. Make sure to add the module as a dependency in
+your project's `pom.xml` or NetBeans module configuration.
 
 ## Building from Source
 
