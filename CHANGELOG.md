@@ -1,4 +1,4 @@
-#20260601
+#20260601 - 0.0.4
 - Bumped versions:
   - FormsFX v26.0.3
   - PreferencesFX v26.0.4
@@ -6,6 +6,7 @@
 - Implemented MappedList
 - New Iconli icon pack:
   bootstrapicons-pack
+- Downgraded required ava source version to 17
 
 #20260427 - initial revision
 
