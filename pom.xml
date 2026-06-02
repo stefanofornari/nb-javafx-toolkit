@@ -475,6 +475,7 @@
                         </dependency>
                     </moduleDependencies>
                     <publicPackages>
+                        <publicPackage>atlantafx.base.controls.*</publicPackage>
                         <publicPackage>ste.netbeans.javafx.*</publicPackage>
                         <publicPackage>ste.netbeans.javafx.collections.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.model.structure.*</publicPackage>
@@ -491,13 +492,18 @@
                         <publicPackage>atlantafx.base.util.*</publicPackage>
                         <publicPackage>animatefx.animation.*</publicPackage>
                         <publicPackage>org.controlsfx.control.*</publicPackage>
+                        <publicPackage>javafx.animation.*</publicPackage>
                         <publicPackage>javafx.application.*</publicPackage>
+                        <publicPackage>javafx.beans.*</publicPackage>
                         <publicPackage>javafx.beans.binding.*</publicPackage>
                         <publicPackage>javafx.beans.property.*</publicPackage>
                         <publicPackage>javafx.beans.value.*</publicPackage>
                         <publicPackage>javafx.collections.*</publicPackage>
+                        <publicPackage>javafx.css.*</publicPackage>
+                        <publicPackage>javafx.converter.*</publicPackage>
                         <publicPackage>javafx.embed.swing.*</publicPackage>
                         <publicPackage>javafx.event.*</publicPackage>
+                        <publicPackage>javafx.fxml.*</publicPackage>
                         <publicPackage>javafx.geometry.*</publicPackage>
                         <publicPackage>javafx.scene.*</publicPackage>
                         <publicPackage>javafx.scene.control.*</publicPackage>

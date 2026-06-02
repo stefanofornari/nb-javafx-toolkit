@@ -36,6 +36,7 @@ public class Install extends ModuleInstall implements Runnable {
             Platform.setImplicitExit(false);
             Platform.startup(() -> {
                 //Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
+                new JFXPanel();  // initialize JavaFX
             });
         } catch (Throwable t) {
             LOG.log(Level.SEVERE, "Error in NetBeans JavaFX Toolkit module restoration", t);

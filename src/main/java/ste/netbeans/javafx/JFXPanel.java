@@ -21,5 +21,9 @@ package ste.netbeans.javafx;
  *
  */
 public class JFXPanel extends javafx.embed.swing.JFXPanel {
-    public static final String CSS = JFXPanel.class.getResource("bridge.css").toExternalForm();  // TODO: move to nb-javafx-toolkit
+    public static final String CSS = JFXPanel.class.getResource("bridge.css").toExternalForm();
+
+    public JFXPanel() {
+        super();
+    }
 }
