@@ -14,12 +14,6 @@ Built to empower NetBeans developers with modern UI capabilities using the lates
 - **[Ikonli Icons Pack](https://github.com/kordamp/ikonli) v12.4.0**: A wide variety of icon packs for JavaFX.
 - **[AtlantaFX](https://github.com/mkpaz/atlantafx) v2.1.0**: Modern CSS themes for JavaFX.
 
-## Toolkit Features
-JavaFX Toolkit for NetBeans provides also some general purpose utlity classes and
-functionality. This sections describes the available features.
-
-- **[MappedList](MappedList)**: A TransformationList that maps items from a source ObservableList using a mapper function.
-
 ## Installation
 
 ### Requirements

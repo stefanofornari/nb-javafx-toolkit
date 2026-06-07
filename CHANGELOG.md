@@ -1,3 +1,13 @@
+#20260606 - v0.0.6
+- Bumped versions:
+  - FormsFX v26.0.4
+  - PreferencesFX v26.0.5
+- Added CommonsFX v0.0.1
+- Removed classes now in CommonsFX
+
+#20260601 - 0.0.5
+- Exposed some more packages
+
 #20260601 - 0.0.4
 - Bumped versions:
   - FormsFX v26.0.3

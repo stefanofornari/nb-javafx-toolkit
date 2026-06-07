@@ -106,12 +106,13 @@
         <maven.compiler.target>17</maven.compiler.target>
         <netbeans.version>RELEASE140</netbeans.version>
         <javafx.version>21.0.10</javafx.version>
-        <preferencesfx.version>26.0.4</preferencesfx.version>
-        <formsfx.version>26.0.3</formsfx.version>
+        <preferencesfx.version>26.0.5</preferencesfx.version>
+        <formsfx.version>26.0.4</formsfx.version>
         <controlsfx.version>11.2.3</controlsfx.version>
         <animatefx.version>1.2.4</animatefx.version>
         <ikonli.version>12.4.0</ikonli.version>
         <atlantafx.version>2.1.0</atlantafx.version>
+        <commonsfx.version>0.0.1</commonsfx.version>
     </properties>
 
     <!--
@@ -147,6 +148,15 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-media</artifactId>
             <version>${javafx.version}</version>
+        </dependency>
+
+        <!--
+                CommonsFX
+        -->
+        <dependency>
+            <groupId>com.github.stefanofornari</groupId>
+            <artifactId>commonsfx</artifactId>
+            <version>${commonsfx.version}</version>
         </dependency>
 
         <!--
@@ -420,6 +430,10 @@
                 </exclusion>
             </exclusions>
         </dependency>
+
+        <!--
+                NetBeans
+        -->
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-modules</artifactId>
@@ -476,14 +490,15 @@
                     </moduleDependencies>
                     <publicPackages>
                         <publicPackage>atlantafx.base.controls.*</publicPackage>
-                        <publicPackage>ste.netbeans.javafx.*</publicPackage>
-                        <publicPackage>ste.netbeans.javafx.collections.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.model.structure.*</publicPackage>
-                        <publicPackage>com.dlsc.formsfx.view.renderer</publicPackage>
+                        <publicPackage>com.dlsc.formsfx.model.validators.*</publicPackage>
+                        <publicPackage>com.dlsc.formsfx.view.controls.*</publicPackage>
+                        <publicPackage>com.dlsc.formsfx.view.renderer.*</publicPackage>
                         <publicPackage>com.dlsc.formsfx.view.util.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.model.*</publicPackage>
                         <publicPackage>com.dlsc.preferencesfx.view.*</publicPackage>
+                        <publicPackage>devtoolsfx.gui.*</publicPackage>
                         <publicPackage>org.kordamp.ikonli.*</publicPackage>
                         <publicPackage>org.kordamp.ikonli.javafx.*</publicPackage>
                         <publicPackage>org.kordamp.ikonli.feather.*</publicPackage>
@@ -511,6 +526,9 @@
                         <publicPackage>javafx.scene.text.*</publicPackage>
                         <publicPackage>javafx.stage.*</publicPackage>
                         <publicPackage>javafx.util.*</publicPackage>
+                        <publicPackage>ste.commons.javafx.collections.*</publicPackage>
+                        <publicPackage>ste.commons.javafx.property.*</publicPackage>
+                        <publicPackage>ste.netbeans.javafx.*</publicPackage>
                     </publicPackages>
                     <useOSGiDependencies>false</useOSGiDependencies>
                 </configuration>

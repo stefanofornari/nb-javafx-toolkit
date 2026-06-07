@@ -17,11 +17,24 @@
 
 package ste.netbeans.javafx;
 
+import java.util.concurrent.CompletableFuture;
+import javafx.application.HostServices;
+
 /**
  *
  */
 public class JFXPanel extends javafx.embed.swing.JFXPanel {
     public static final String CSS = JFXPanel.class.getResource("bridge.css").toExternalForm();
+
+    protected final static CompletableFuture<HostServices> hostServices = new CompletableFuture<>();
+
+    public HostServices hostServices() {
+        try {
+            return hostServices.get();
+        } catch (Exception x) {
+            throw new RuntimeException(x);
+        }
+    }
 
     public JFXPanel() {
         super();

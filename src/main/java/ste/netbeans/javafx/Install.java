@@ -16,9 +16,13 @@
  */
 package ste.netbeans.javafx;
 
+import java.util.concurrent.CompletableFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javafx.application.Application;
+import javafx.application.HostServices;
 import javafx.application.Platform;
+import javafx.stage.Stage;
 import org.openide.modules.ModuleInstall;
 import org.openide.modules.OnStart;
 
@@ -26,20 +30,51 @@ import org.openide.modules.OnStart;
 @OnStart
 public class Install extends ModuleInstall implements Runnable {
 
-    private final Logger LOG = Logger.getLogger(getClass().getName());
+    private final static Logger LOG = Logger.getLogger(Install.class.getName());
 
     @Override
     public void run() {
         LOG.info(() -> "Starting NetBeans JavaFX Toolkit");
 
+        LOG.info("setting up toolkit host services");
+        // Start the background app thread, pointing to our internal static launcher
+        Thread launchThread = new Thread(() -> {
+            try {
+                Application.launch(FXLauncherStub.class);
+            } catch (IllegalStateException e) {
+                LOG.warning("JavaFX alrady initialized");
+            }
+        }, "FX-HostServices-Bootstrap");
+
+        FXLauncherStub.registerCallback(JFXPanel.hostServices);
+
+        launchThread.setDaemon(true);
+        launchThread.start();
+
         try {
             Platform.setImplicitExit(false);
-            Platform.startup(() -> {
-                //Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
-                new JFXPanel();  // initialize JavaFX
-            });
+            new JFXPanel();  // initialize JavaFX
+            LOG.info("NetBeans JavafX Toolkit initialized");
         } catch (Throwable t) {
             LOG.log(Level.SEVERE, "Error in NetBeans JavaFX Toolkit module restoration", t);
+        }
+    }
+
+    public static class FXLauncherStub extends Application {
+        private static CompletableFuture<HostServices> future;
+
+        public static void registerCallback(final CompletableFuture<HostServices> f) {
+            future = f;
+        }
+
+        @Override
+        public void start(Stage primaryStage) {
+            if (future != null) {
+                HostServices hs = getHostServices();
+                LOG.info("tolkit host services ready " + hs);
+                future.complete(hs);
+            }
+            primaryStage.close(); // Clean up immediately without flashing a blank window
         }
     }
 
