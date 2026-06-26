@@ -1,3 +1,6 @@
+#20260626 - v0.0.7
+- Improved installation sequence to address https://github.com/apache/netbeans/issues/9453
+
 #20260606 - v0.0.6
 - Bumped versions:
   - FormsFX v26.0.4

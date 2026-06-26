@@ -36,26 +36,25 @@ public class Install extends ModuleInstall implements Runnable {
     public void run() {
         LOG.info(() -> "Starting NetBeans JavaFX Toolkit");
 
-        LOG.info("setting up toolkit host services");
-        // Start the background app thread, pointing to our internal static launcher
+        LOG.info("Setting up toolkit host services");
+        FXLauncherStub.registerCallback(JFXPanel.hostServices);
         Thread launchThread = new Thread(() -> {
             try {
                 Application.launch(FXLauncherStub.class);
             } catch (IllegalStateException e) {
-                LOG.warning("JavaFX alrady initialized");
+                LOG.log(Level.INFO, "JavaFX alrady initialized", e);
             }
         }, "FX-HostServices-Bootstrap");
 
-        FXLauncherStub.registerCallback(JFXPanel.hostServices);
-
         launchThread.setDaemon(true);
-        launchThread.start();
 
         try {
-            Platform.setImplicitExit(false);
             new JFXPanel();  // initialize JavaFX
-            LOG.info("NetBeans JavafX Toolkit initialized");
+            Platform.setImplicitExit(false);
+            launchThread.start();
+            LOG.info("NetBeans JavaFX Toolkit initialized");
         } catch (Throwable t) {
+            t.printStackTrace();
             LOG.log(Level.SEVERE, "Error in NetBeans JavaFX Toolkit module restoration", t);
         }
     }
@@ -71,7 +70,7 @@ public class Install extends ModuleInstall implements Runnable {
         public void start(Stage primaryStage) {
             if (future != null) {
                 HostServices hs = getHostServices();
-                LOG.info("tolkit host services ready " + hs);
+                LOG.info("NetBeans JavaFX Toolkit host services ready " + hs);
                 future.complete(hs);
             }
             primaryStage.close(); // Clean up immediately without flashing a blank window
